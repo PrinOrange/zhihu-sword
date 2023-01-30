@@ -1,70 +1,60 @@
-# Chrome Extension TypeScript Starter
+# ZHIHU SWORD - 知乎拉黑增强工具
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
+## 项目背景
 
-Chrome Extension, TypeScript and Visual Studio Code
+本工具是知乎拉黑功能的增强版。可以一键拉黑所有点赞指定回答的知乎用户。本工具的初始目的是为了彻底隔绝观点不同的人，以避免日后产生观点交流上的不愉快，降低冲突几率、提高知乎的使用体验。
 
-## Prerequisites
+正所谓：
 
-* [node + npm](https://nodejs.org/) (Current Version)
+> 道不同不相为谋，志不同不相为友 \
+> —— 《论语·卫灵公》
 
-## Option
+## 使用须知
 
-* [Visual Studio Code](https://code.visualstudio.com/)
+本工具有一定的威力。在使用前请谨慎考量，避免误伤。滥用本工具可能会为自己招致不必要的麻烦。
 
-## Includes the following
+**注意：知乎黑名单的容量是有限的（听说约2万人左右）。** 知乎至今约有2亿用户，且大多数是不活跃用户（一个月上不了一两次）。滥用本工具会浪费宝贵的黑名单容量。
 
-* TypeScript
-* Webpack
-* React
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
+在使用前，请思考：
++ 这个回答里聚集的群体是否可能在未来会为自己造成困扰？是否值得自己去屏蔽？
++ 若关注的人、自己的朋友等人是否也属于该回答的观点持有人群中？若使用本工具是否会造成误伤，乃至产生误解？
 
-## Project Structure
+## 警告声明
 
-* src/typescript: TypeScript source files
-* src/assets: static files
-* dist: Chrome Extension directory
-* dist/js: Generated JavaScript files
++ 本项目仅供学习、研究使用。不得用于商业等营利性用途。
++ 对于使用、传播、修改本项目及工具所造成的一切后果自负。
 
-## Setup
+## 项目入手
+
+本项目是React开发的Chrome Extension插件。为顺利入手，请确保你的电脑安装了以下程序或环境：
++ Visual Studio Code
++ Chrome (v95+) 或Edge浏览器 (v102+)。
++ Node.js (v16+) 和 npm (v9+)
+
+### 安装
 
 ```
 npm install
 ```
 
-## Import as Visual Studio Code project
-
-...
-
-## Build
+### 构建
 
 ```
-npm run build
+npm run dist
 ```
 
-## Build in watch mode
+`./dist` 目录即为生成内容。
 
-### terminal
+### 调试
+
+若希望在开发环境下调试本项目，可运行
 
 ```
 npm run watch
 ```
 
-### Visual Studio Code
+在浏览器中调试可参考 [Chrome Extension Developer中的文档](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/)
 
-Run watch mode.
+## 开源许可
 
-type `Ctrl + Shift + B`
-
-## Load extension to chrome
-
-Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`
+这个项目的开源协议遵循 [MIT License.](./LICENSE)
